@@ -37,11 +37,18 @@
     <div></div>
     <div></div>
   </div>
-  <div class="calendarBox">
-  <div class="calHeader">
-    <h2>Streaks</h2>
-    <h2>Calendar</h2>
-  </div>
+  <div class="sideNavBox">
+    <div class="sideBoxTabs">
+      <button onclick="openTab(event, 'streaks')">Streaks</button>
+      <button onclick="openTab(event, 'calendar')">Calendar</button>
+    </div>
+  <!-- Tab content -->
+    <div id="streaks" class="tabPanel">
+      <h1>Streaks</h1>
+    </div>
+    <div id="calendar" class="tabPanel">
+      <h1>Calendar</h1>
+    </div>
   </div>
 </div>
 

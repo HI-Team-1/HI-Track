@@ -63,7 +63,7 @@ html {
   border-radius: 20px;
   
 }
-.calendarBox{
+.sideNavBox{
  border: 1px solid rgb(12, 12, 12);
  background-color:white;
  margin: 15px 15px 0 0;
@@ -71,7 +71,7 @@ html {
  border-radius: 20px;
 }
 
-.calHeader{
+.sideBoxTabs{
   width: 100%;
   height: 60px;
   background-color: rgb(221, 107, 221, 0.6);
@@ -85,9 +85,28 @@ html {
   align-items: center;
 
 } 
-.calHeader > h2{
-  border: 2px solid  rgb(221, 107, 221);
+.sideBoxTabs > button{
+  border: 3px solid  rgb(206, 99, 206);
+  background-color: rgb(240, 117, 240);
+  color: white;
   width: 120px;
+  height: 40px;
+  font-size: 15px;
   border-radius: 20px;
+  text-align: center;
+  outline:none;
+}
+.sideBoxTabs > button:hover {
+  background-color: rgb(206, 99, 206);
+}
+
+.sideBoxTabs button.active {
+  background-color: rgb(206, 99, 206);
+}
+.tabPanel{
+  display: none;
+}
+.tabPanel > h1{
+  margin-top: 10px;
   text-align: center;
 }
