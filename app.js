@@ -1,3 +1,4 @@
+
 var leftBoxTabs = document.querySelectorAll(".leftBoxTabs button");
 var leftBoxList = document.querySelectorAll(".leftBoxList");
 
@@ -17,3 +18,5 @@ leftBoxTabs.forEach(function (tab, tab_index) {
     });
   });
 });
+
+
