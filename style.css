@@ -1,13 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-html {
-  font-size: 62.5%; /*16 px is 1 rem at 100%* to make 1 rem = 10 px change html at 62.5%*/
-}
-.titleBar{
+
+.titleBar {
   width: 100%;
   height: 60px;
   background-color: rgb(221, 107, 221, 0.6);
@@ -24,50 +22,59 @@ html {
   width: 100%;
   height: 70px;
   padding: 20px;
-  font-size: 15px;;
+  font-size: 15px;
   display: grid;
   grid-template-columns: repeat(8, 12px);
   grid-column-gap: 10px;
   justify-content: center;
 }
 
-.mainBox{
+.mainBox {
   display: grid;
-  height:600px;
-  background-color: rgb(221, 107, 221, 0.6);
-  grid-template-columns: 1.3fr 1fr;
-  grid-column-gap: 10px;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
+  width: 100%;
+  justify-content: center;
+  padding: 2em;
 }
 /* left large activity box */
-.activitiesBox {
+.rightBox {
+  height: auto;
   border: 1px solid rgb(12, 12, 12);
- background-color:white;
- margin: 15px 15px 0 0;
- height: 90%;
- border-radius: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
-.activitiesTabs {
+.rightBoxTabs {
   width: 100%;
   height: 60px;
   background-color: rgb(221, 107, 221, 0.6);
-  border-radius: 20px 20px 0px 0px;
-  color: white;
-  
+  border-radius: 10px 10px 0px 0px;
   display: grid;
   grid-template-columns: repeat(2, 100px);
   grid-column-gap: 40px;
   justify-content: center;
   align-items: center;
 }
-.activitiesTabs > button{
-  border: 3px solid  rgb(206, 99, 206);
+.rightBoxTabs > button {
+  border: 3px solid rgb(206, 99, 206);
   background-color: rgb(240, 117, 240);
   color: white;
-  height: 66%;
-  font-size: 15px;
-  border-radius: 20px;
+  height: 3em;
+  font-size: 1.5vh;
+  border-radius: 10px;
   text-align: center;
-  outline:none;
+  outline: none;
+}
+
+.leftBoxList ul {
+  list-style: none;
+  margin: 1em 1em;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 /* .activitiesBox li {
@@ -77,50 +84,48 @@ html {
 } */
 
 /* right large activity box */
-.sideNavBox{
- border: 1px solid rgb(12, 12, 12);
- background-color:white;
- margin: 15px 15px 0 0;
- height: 90%;
- border-radius: 20px;
+.leftBox {
+  height: auto;
+  border: 1px solid rgb(12, 12, 12);
+  background-color: white;
+  border-radius: 10px;
 }
 
-.sideBoxTabs {
+.leftBoxTabs {
   width: 100%;
   height: 60px;
   background-color: rgb(221, 107, 221, 0.6);
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   color: white;
   display: grid;
   grid-template-columns: repeat(2, 100px);
   grid-column-gap: 40px;
   justify-content: center;
   align-items: center;
+}
 
-} 
-
-.sideBoxTabs > button{
-  border: 3px solid  rgb(206, 99, 206);
+.leftBoxTabs > button {
+  border: 3px solid rgb(206, 99, 206);
   background-color: rgb(240, 117, 240);
   color: white;
   /* width: 120px;  not needed as it has to fit the text*/
   height: 66%;
   font-size: 15px;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
-  outline:none;
+  outline: none;
 }
-.sideBoxTabs > button:hover {
+.leftBoxTabs > button:hover {
   background-color: rgb(206, 99, 206);
 }
 
-.sideBoxTabs button.active {
+.leftBoxTabs button.active {
   background-color: rgb(206, 99, 206);
 }
-.tabPanel{
+.tabPanel {
   display: none;
 }
-.tabPanel > h1{
+.tabPanel > h1 {
   margin-top: 10px;
   text-align: center;
 }

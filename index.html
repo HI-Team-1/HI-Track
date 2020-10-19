@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-  <script src="app.js" defer ></script>
-  <title>Habit tracker project</title>
-
-</head>
-<body>
-<div class="titleBar">
-  <h1>HIT</h1>
-  <p>Activities</p>
-</div>
-
-<div class="weekHeader">
- 
-</div>
-<div class="mainBox">
-  <div class="activitiesBox">
-  <!-- Tab buttons -->
-    <div class="activitiesTabs">
-      <button >Today</button>
-      <button >All activities</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Habit tracker project</title>
+  </head>
+  <body>
+    <div class="titleBar">
+      <h1>HIT</h1>
     </div>
-  <!-- Tab content -->
-    <ul class="todayBoxes">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul class="allBoxes">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-    
-  <!-- </div> -->
-  <div class="sideNavBox">
-  <!-- Tab buttons -->  
-    <div class="sideBoxTabs">
-      <button onclick="openTab(event, 'streaks')">Streaks</button>
-      <button onclick="openTab(event, 'calendar')">Calendar</button>
-    </div>
-  <!-- Tab content -->
-    <div id="streaks" class="tabPanel">
-      <h1>Streaks</h1>
-    </div>
-    <div id="calendar" class="tabPanel">
-      <h1>Calendar</h1>
-    </div>
-  </div>
-</div>
 
-  
-</body>
+    <div class="mainBox">
+      <div class="leftBox">
+        <!-- Tab buttons -->
+        <div class="leftBoxTabs">
+          <button class="todayButton">Today</button>
+          <button>All activities</button>
+        </div>
+        <!-- Tab content -->
+        <div class="leftBoxList">
+          <ul class="leftActivies" id="today">
+            <li>Today</li>
+          </ul>
+          <ul class="leftActivies">
+            <li>All Acitivies</li>
+          </ul>
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="rightBox">
+        <!-- Tab buttons -->
+        <div class="rightBoxTabs">
+          <button>Streaks</button>
+          <button>Calendar</button>
+        </div>
+        <!-- Tab content -->
+        <div id="streaks" class="tabPanel">
+          <h1>Streaks</h1>
+        </div>
+        <div id="calendar" class="tabPanel">
+          <h1>Calendar</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
 </html>
