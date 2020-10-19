@@ -31,38 +31,52 @@ html {
   justify-content: center;
 }
 
-.weekHeader > .addBtn {
-  /* justify-self: start; */
-  /* align-content: start;  */
-  background-color: rgb(209, 201, 201);
-  width: 20px; 
-  height: 20px;
-  background-image: url("img/plusBtn2.png"); 
-  background-repeat: no-repeat;
-  background-size: 100%; 
-}
-.wrapper{
+.mainBox{
   display: grid;
   height:600px;
   background-color: rgb(221, 107, 221, 0.6);
   grid-template-columns: 1.3fr 1fr;
   grid-column-gap: 10px;
 }
-.behavBox {
-  /* border: 2px solid rgb(12, 12, 12); */
-  margin-left: 40px;
-  height: 90%; 
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 20px;
+/* left large activity box */
+.activitiesBox {
+  border: 1px solid rgb(12, 12, 12);
+ background-color:white;
+ margin: 15px 15px 0 0;
+ height: 90%;
+ border-radius: 20px;
 }
-.behavBox > div {
+.activitiesTabs {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(221, 107, 221, 0.6);
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.activitiesTabs > button{
+  border: 3px solid  rgb(206, 99, 206);
+  background-color: rgb(240, 117, 240);
+  color: white;
+  height: 66%;
+  font-size: 15px;
+  border-radius: 20px;
+  text-align: center;
+  outline:none;
+}
+
+/* .activitiesBox li {
   background-color:rgb(168, 155, 155);
   border-radius: 20px;
   
-}
+} */
+
+/* right large activity box */
 .sideNavBox{
  border: 1px solid rgb(12, 12, 12);
  background-color:white;
@@ -71,13 +85,12 @@ html {
  border-radius: 20px;
 }
 
-.sideBoxTabs{
+.sideBoxTabs {
   width: 100%;
   height: 60px;
   background-color: rgb(221, 107, 221, 0.6);
   border-radius: 20px 20px 0px 0px;
   color: white;
-  /* font-weight: 300; */
   display: grid;
   grid-template-columns: repeat(2, 100px);
   grid-column-gap: 40px;
@@ -85,12 +98,13 @@ html {
   align-items: center;
 
 } 
+
 .sideBoxTabs > button{
   border: 3px solid  rgb(206, 99, 206);
   background-color: rgb(240, 117, 240);
   color: white;
-  width: 120px;
-  height: 40px;
+  /* width: 120px;  not needed as it has to fit the text*/
+  height: 66%;
   font-size: 15px;
   border-radius: 20px;
   text-align: center;
