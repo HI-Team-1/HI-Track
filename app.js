@@ -1,12 +1,19 @@
-var todayButton = document.querySelector(".todayButton");
-var leftActivies = document.querySelectorAll(".leftActivies");
-var today = document.getElementById("today");
+var leftBoxTabs = document.querySelectorAll(".leftBoxTabs button");
+var leftBoxList = document.querySelectorAll(".leftBoxList");
 
-todayButton.addEventListener("click", todayContent);
+leftBoxTabs.forEach(function (tab, tab_index) {
+  tab.addEventListener("click", function () {
+    leftBoxTabs.forEach(function (tab) {
+      tab.classList.remove("active");
+    });
+    tab.classList.add("leftActivies");
 
-function todayContent() {
-  for (let i = 0; i < leftActivies.length; i++) {
-    leftActivies[i].style.display = "none";
-  }
-  today.style.display = "block";
-}
+    leftBoxList.forEach(function (content, content_index) {
+      if (content_index == tab_index) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    });
+  });
+});
