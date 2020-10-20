@@ -68,14 +68,8 @@
   outline: none;
 }
 
-.leftBoxList ul {
-  list-style: none;
-  margin: 1em 1em;
-  height: 10em;
-  width: 10em;
-  padding: 1em;
-  border: 1px solid black;
-  border-radius: 10px;
+.rightBoxTabs > button:hover {
+  background-color: rgb(206, 99, 206);
 }
 
 /* .activitiesBox li {
@@ -104,6 +98,15 @@
   justify-content: center;
   align-items: center;
 }
+.leftBoxList li {
+  list-style: none;
+  margin: 1em 1em;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
 
 .leftBoxTabs > button {
   border: 3px solid rgb(206, 99, 206);
@@ -111,7 +114,7 @@
   color: white;
   /* width: 120px;  not needed as it has to fit the text*/
   height: 66%;
-  font-size: 15px;
+  font-size: 1.5vh;
   border-radius: 10px;
   text-align: center;
   outline: none;
@@ -120,9 +123,7 @@
   background-color: rgb(206, 99, 206);
 }
 
-.leftBoxTabs button.active {
-  background-color: rgb(206, 99, 206);
-}
+
 .tabPanel {
   display: none;
 }
