@@ -50,6 +50,7 @@
   height: 60px;
   background-color: rgb(221, 107, 221, 0.6);
   border-radius: 10px 10px 0px 0px;
+  color: white;
   display: grid;
   grid-template-columns: repeat(2, 100px);
   grid-column-gap: 40px;
@@ -60,8 +61,8 @@
   border: 3px solid rgb(206, 99, 206);
   background-color: rgb(240, 117, 240);
   color: white;
-  height: 3em;
-  font-size: 1.5vh;
+  height: 66%;
+  font-size: 1em;
   border-radius: 10px;
   text-align: center;
   outline: none;
@@ -94,7 +95,7 @@
   align-items: center;
 }
 .leftBoxList ul li {
- display: none; /*get back to this later, put initial box*/
+  display: none; /*get back to this later, put initial box*/
 }
 .leftBoxList li {
   list-style: none;
@@ -110,9 +111,8 @@
   border: 3px solid rgb(206, 99, 206);
   background-color: rgb(240, 117, 240);
   color: white;
-  /* width: 120px;  not needed as it has to fit the text*/
   height: 66%;
-  font-size: 1.5vh;
+  font-size: 1em;
   border-radius: 10px;
   text-align: center;
   outline: none;
