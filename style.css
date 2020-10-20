@@ -38,7 +38,7 @@
   justify-content: center;
   padding: 2em;
 }
-/* left large activity box */
+/* right large activity box */
 .rightBox {
   height: auto;
   border: 1px solid rgb(12, 12, 12);
@@ -66,18 +66,14 @@
   text-align: center;
   outline: none;
 }
-
 .rightBoxTabs > button:hover {
   background-color: rgb(206, 99, 206);
 }
+.rightBoxTabs button.active {
+  background-color: rgb(206, 99, 206);
+}
 
-/* .activitiesBox li {
-  background-color:rgb(168, 155, 155);
-  border-radius: 20px;
-  
-} */
-
-/* right large activity box */
+/* left large activity box */
 .leftBox {
   height: auto;
   border: 1px solid rgb(12, 12, 12);
@@ -124,7 +120,9 @@
 .leftBoxTabs > button:hover {
   background-color: rgb(206, 99, 206);
 }
-
+.leftBoxTabs button.active {
+  background-color: rgb(206, 99, 206);
+}
 
 .tabPanel {
   display: none;
@@ -133,4 +131,3 @@
   margin-top: 10px;
   text-align: center;
 }
-

@@ -7,7 +7,6 @@ var rightBoxTabs=document.querySelectorAll(".rightBoxTabs button");
 var tabPanel=document.querySelectorAll(".tabPanel");
 
 
-
 function switchTabs(tab,tab_index,tab_wraps){
     tab_wraps.forEach(function(content, content_index){
         if(content_index == tab_index){
@@ -20,18 +19,23 @@ function switchTabs(tab,tab_index,tab_wraps){
 
 }
 
-
 leftBoxTabs.forEach(function(tab, tab_index){
 	tab.addEventListener("click", function(){
-	
-      switchTabs(tab,tab_index,leftActivities);
+        leftBoxTabs.forEach(function(tab){
+			tab.classList.remove("active");
+		})
+		tab.classList.add("active");
+        switchTabs(tab,tab_index,leftActivities);
     })
 		
 })
 
 rightBoxTabs.forEach(function(tab, tab_index){
 	tab.addEventListener("click", function(){
-
+        rightBoxTabs.forEach(function(tab){
+			tab.classList.remove("active");
+		})
+		tab.classList.add("active");
 		switchTabs(tab,tab_index,tabPanel);
 
 	})
