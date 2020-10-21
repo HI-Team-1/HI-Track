@@ -1,6 +1,3 @@
-
-
-
 var leftBoxTabs = document.querySelectorAll(".leftBoxTabs button");
 var leftActivities = document.querySelectorAll(".leftActivities");
 var rightBoxTabs=document.querySelectorAll(".rightBoxTabs button");
