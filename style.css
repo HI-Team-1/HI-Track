@@ -31,13 +31,12 @@
 
 .mainBox {
   display: grid;
-  height: 35rem;
+  height: 45rem;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 25px;
+  grid-column-gap: 3rem;
   width: 100%;
   justify-content: center;
-  padding: 1rem;
-  margin-top: 5rem;
+  padding: 3rem;
 }
 
 .leftBox {
@@ -112,7 +111,7 @@
 
 .leftBoxList .card-panel {
   height: 5em;
-  width: 27.5em;
+  width: 30rem;
   border-radius: 10px;
 }
 
