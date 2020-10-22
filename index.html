@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calander.css">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -16,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+     crossorigin="anonymous" />
+  
     <title>Habit tracker project</title>
   </head>
   <body>
@@ -98,11 +103,36 @@
             <h1>Streaks</h1>
           </div>
           <div id="calendar" class="tabPanel">
-            <h1>Calendar</h1>
+            <div class="container2 z-depth-2">
+          
+              <div class="calender">
+                  <div class="month">
+                      <i class="fas fa-angle-left previous"></i>
+                      <div class="date">
+                          <h1 class="c-month"></h1>
+                          <p class="cDate"></p>
+                      </div>
+                      <i class="fas fa-angle-right next"></i>
+                  </div>
+                  <div class="weekdays">
+                      <div>Sun</div>
+                      <div>Mon </div>
+                      <div>Tue</div>
+                      <div>Wed</div>
+                      <div>Th</div>
+                      <div>Fri</div>
+                      <div>Sat</div>
+                  </div>
+               <div class=days>
+                         
+              </div>                                
+            </div>
+        </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="calander.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="app.js" defer></script>
   </body>
