@@ -110,6 +110,12 @@
   border-radius: 10px;
 }
 
+.leftBoxList .card-panel {
+  height: 5em;
+  width: 27.5em;
+  border-radius: 10px;
+}
+
 .leftActivities {
   padding-top: 1em;
   padding-left: 1em;
