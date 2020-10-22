@@ -143,3 +143,10 @@
   margin-top: 10px;
   text-align: center;
 }
+/*when screen width is smaller left box jumps on top of right box*/
+@media(max-width:768px){
+  .mainBox{
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+}
