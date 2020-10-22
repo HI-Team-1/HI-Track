@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  line-height: 1.2;
 }
 
 /*.titleBar {
@@ -140,7 +141,9 @@
 }
 
 .tabPanel > h1 {
-  margin-top: 10px;
+  font-size: 2rem;;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
 }
 /*when screen width is smaller left box jumps on top of right box*/
@@ -149,4 +152,44 @@
     grid-template-columns: 1fr;
     grid-gap: 25px;
   }
+}
+/* styling for streak tab */
+.roundBoxes {
+ display: grid;
+ grid-template-columns: repeat(2, 7rem); 
+ grid-gap: 1rem;
+ justify-content: center;
+ align-items: center;
+}
+.roundBoxes .roundBox > div {
+ height: 7rem;
+ width: 7rem;
+ border-radius: 5rem;
+ margin-top: 0.5rem;;
+ border: 3px solid rgb(221, 97, 221);
+ background-color: rgb(240, 202, 208);
+ color: white;
+ font-size: 3rem;
+ text-align: center;/*what?*/
+}
+
+.roundBox h3 {
+  font-size: 1.2rem;
+  margin: 5px;
+  padding-left: 1px;
+ 
+}
+.roundBox p {
+  font-size: 1rem;
+  margin: 5px;
+}
+.squareBoxes {
+  width: 100%;
+  background-color: grey;
+  display: flex;
+}
+.squareBoxes .b1 {
+  width: 30%;
+  height: 10%;
+  background-color: grey;
 }
