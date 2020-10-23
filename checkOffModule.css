@@ -1,0 +1,17 @@
+.leftBoxList li div {
+  list-style: none;
+  height: 10em;
+  width: 10em;
+  border-radius: 10px;
+}
+
+.leftActivities {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.leftBoxList .card-panel {
+  height: 5em;
+  width: 30rem;
+  border-radius: 10px;
+}
