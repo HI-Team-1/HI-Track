@@ -41,6 +41,7 @@
 }
 
 .leftBox {
+  position:relative;
   height: auto;
   background-color: white;
   border-radius: 10px;
@@ -170,8 +171,15 @@
  background-color: rgb(240, 202, 208);
  color: white;
  font-size: 3rem;
- text-align: center;/*what?*/
+ /* align-self: center; */
+ place-self:center;
+ /* text-align: center; */
 }
+ .roundBox > div h4 {
+  place-self:center;
+  text-align: center
+  
+ }
 
 .roundBox h3 {
   font-size: 1.2rem;
@@ -184,12 +192,31 @@
   margin: 5px;
 }
 .squareBoxes {
-  width: 100%;
-  background-color: grey;
+  width: 350px;
+  height: 340px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
 }
 .squareBoxes .b1 {
-  width: 30%;
-  height: 10%;
-  background-color: grey;
+ background-color: pink;
+ text-align: center;
+ width: 90px;
+ height: 90px;
+ margin: 7px;
+ padding: 5px;
+ border-radius: 10px;
+ border: grey solid 1px;
+}
+.squareBoxes .b2 {
+  background-color: magenta;
+ text-align: center;
+ width: 90px;
+ height: 90px;
+ margin: 7px;
+ padding: 5px;
+ border-radius: 10px;
+ border: grey solid 1px;
+ flex-grow: 1;
 }
