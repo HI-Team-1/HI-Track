@@ -192,8 +192,8 @@
   margin: 5px;
 }
 .squareBoxes {
-  width: 350px;
-  height: 340px;
+  width: 25em ;
+  height: 22em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
