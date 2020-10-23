@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  line-height: 1.2;
 }
 
-.titleBar {
+/*.titleBar {
   width: 100%;
   height: 60px;
   background-color: rgb(221, 107, 221, 0.6);
@@ -15,119 +16,135 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .weekHeader {
   /* border: 2px solid grey; */
   width: 100%;
   height: 70px;
   padding: 20px;
-  /* font-size: 15px;
+  font-size: 15px;
   display: grid;
   grid-template-columns: repeat(8, 12px);
   grid-column-gap: 10px;
-  justify-content: center;  this was not used can delete*/
+  justify-content: center;
 }
 
 .mainBox {
   display: grid;
-  height: auto;
+  height: 45rem;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 25px;
+  grid-column-gap: 3rem;
   width: 100%;
   justify-content: center;
-  padding: 2em;
+  padding: 3rem;
 }
-/* right large activity box */
-.rightBox {
+
+.leftBox {
+  position:relative;
   height: auto;
-  border: 1px solid rgb(12, 12, 12);
   background-color: white;
   border-radius: 10px;
 }
-.rightBoxTabs {
-  width: 100%;
-  height: 60px;
-  background-color: rgb(221, 107, 221, 0.6);
-  border-radius: 10px 10px 0px 0px;
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  grid-column-gap: 40px;
-  justify-content: center;
-  align-items: center;
-}
-.rightBoxTabs > button {
-  border: 3px solid rgb(206, 99, 206);
-  background-color: rgb(240, 117, 240);
-  color: white;
-  height: 66%;
-  font-size: 1em;
-  border-radius: 10px;
-  text-align: center;
-  outline: none;
-}
-.rightBoxTabs > button:hover {
-  background-color: rgb(206, 99, 206);
-}
-.rightBoxTabs button.active {
-  background-color: rgb(206, 99, 206);
-}
 
-/* left large activity box */
-.leftBox {
+.rightBox {
   height: auto;
-  border: 1px solid rgb(12, 12, 12);
   background-color: white;
   border-radius: 10px;
 }
 
 .leftBoxTabs {
   width: 100%;
-  height: 60px;
-  background-color: rgb(221, 107, 221, 0.6);
+  height: 4rem;
+  background-color: #673ab7;
   border-radius: 10px 10px 0px 0px;
   color: white;
   display: grid;
   grid-template-columns: repeat(2, 100px);
-  grid-column-gap: 40px;
+  grid-column-gap: 5rem;
   justify-content: center;
   align-items: center;
 }
-.leftBoxTabs > button {
-  border: 3px solid rgb(206, 99, 206);
-  background-color: rgb(240, 117, 240);
+
+.rightBoxTabs {
+  width: 100%;
+  height: 4rem;
+  background-color: #673ab7;
+  border-radius: 10px 10px 0px 0px;
   color: white;
-  height: 66%;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-column-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftBoxTabs > button {
+  border: 3px solid #b388ff;
+  background-color: #9575cd;
+  color: white;
+  height: 2.7rem;
   font-size: 1em;
   border-radius: 10px;
   text-align: center;
   outline: none;
 }
-.leftBoxTabs > button:hover {
-  background-color: rgb(206, 99, 206);
-}
-.leftBoxTabs button.active {
-  background-color: rgb(206, 99, 206);
+
+.rightBoxTabs > button {
+  border: 3px solid #b388ff;
+  background-color: #9575cd;
+  color: white;
+  height: 2.7rem;
+  font-size: 1em;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
 }
 
 .leftBoxList ul li {
   display: none; /*get back to this later, put initial box*/
 }
-.leftBoxList li {
+.leftBoxList li div {
   list-style: none;
-  margin: 1em 1em;
   height: 10em;
   width: 10em;
-  padding: 1em;
-  border: 1px solid black;
   border-radius: 10px;
 }
+
+.leftBoxList .card-panel {
+  height: 5em;
+  width: 30rem;
+  border-radius: 10px;
+}
+
+.leftActivities {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+/*Box Button Hover Effects*/
+.leftBoxTabs > button:hover {
+  background-color: #5e35b1;
+}
+.leftBoxTabs button.active {
+  background-color: #5e35b1;
+}
+
+.rightBoxTabs > button:hover {
+  background-color: #5e35b1;
+}
+.rightBoxTabs button.active {
+  background-color: #5e35b1;
+}
+
 .tabPanel {
   display: none;
 }
+
 .tabPanel > h1 {
-  margin-top: 10px;
+  font-size: 2rem;;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
 }
 /*when screen width is smaller left box jumps on top of right box*/
