@@ -166,7 +166,7 @@
  height: 7rem;
  width: 7rem;
  border-radius: 5rem;
- margin-top: 0.5rem;;
+ margin-top: 0.5rem;
  border: 3px solid rgb(221, 97, 221);
  background-color: rgb(240, 202, 208);
  color: white;
@@ -177,8 +177,11 @@
 }
  .roundBox > div h4 {
   place-self:center;
-  text-align: center
-  
+  text-align: center;
+  margin: 30px auto; /*helps center the 0 inside*/ 
+ }
+ .roundBox > h3, p{
+   text-align: center;
  }
 
 .roundBox h3 {
@@ -198,6 +201,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+  margin: 0 auto;
 }
 .squareBoxes .b1 {
  background-color: pink;
