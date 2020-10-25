@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="style.css" /> -->
   <link rel="stylesheet" href="menuBar.css" />
   
 
@@ -13,54 +12,162 @@
   <!-- <div class="forms"></div> -->
   <section id="timeForm">
     <form>
-      <!-- <input type="radio" id="goal" name="type" value="Goal">
-      <input type="radio" id="limit" name="type" value="Limit"> -->
     <!-- <label for="type">Type:</label> -->
     
       <div class="type">Type:</div>
-      <div class="box1 box">Goal</div>
-      <div class="box2 box">Limit</div>
+      <div class="box1 box">
+        <input type="radio" id="goal" name="type" value="Goal"> Goal
+      </div>
+      <div class="box2 box"><input type="radio" id="limit" name="type" value="Limit"> Limit</div>
     
       <div class="name">Name:</div>
-      <div class="box3 box"></div>
+      <div class="box3 box"><input type="text" id="name" name="name"></div>
     
     
       <div class="color">Color:</div>
       <div class="box4 box"></div>
     
       <div class="tpperiod">Times per period:</div>
-      <div class="box5 box"></div>
+      <div class="box5 box">0</div>
     
     
       <div class="period">Period:</div>
-      <div class="box6 box">Every day</div>
-      <div class="box7 box">Every week</div>
-      <div class="box8 box">Every month</div>
-      <div class="box9 box">Every year</div>
+      <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day">
+        Every day</div>
+      <div class="box7 box"><input type="radio" id="eWeek" name="type" value="every week">
+        Every week</div>
+      <div class="box8 box"><input type="radio" id="eMonth" name="type" value="every month">
+        Every month</div>
+      <div class="box9 box"><input type="radio" id="eYear" name="type" value="every year">
+        Every year</div>
    
     
-      <div class="box10 box">Select week days</div>
+      <div class="box10 box"><input type="radio" id="sWeekDays" name="type" value="select week days"> Select week days:</div>
       <div class="box11 box">
-        <div></div>
+        <input type="checkbox" id="monday" name="type" value="monday">
+        <label for="monday"> Mon</label>
+        <input type="checkbox" id="tuesday" name="type" value="tuesday">
+        <label for="tuesday"> Tue</label>
+        <input type="checkbox" id="wednesday" name="type" value="wednesday">
+        <label for="thursday"> Wed</label>
+        <input type="checkbox" id="thursday" name="type" value="thursday">
+        <label for="thursday"> Th</label>
+        <input type="checkbox" id="friday" name="type" value="friday">
+        <label for="friday"> Fri</label>
+        <input type="checkbox" id="saturday" name="type" value="saturday">
+        <label for="saturday"> Sat</label>
+        <input type="checkbox" id="sunday" name="type" value="sunday">
+        <label for="sunday"> Sun</label>
       </div>
-      <div class="btn"><input id="submitBtn" type="submit" value="Save" /></div>
-    
-
-    
-    
-    
-    <!-- 7 small boxes  -->
-    
+      <div class="btn"><input id="submitBtn" type="submit" value="Save" /></div>    
     </form>
     
   </section>
+  <!-- the other 2 form templates -->
+  <section id="checkOffForm">
+    <form>
+      <!-- <label for="type">Type:</label> -->
+      
+        <div class="type">Type:</div>
+        <div class="box1 box">
+          <input type="radio" id="goal" name="type" value="Goal"> Goal
+        </div>
+        <div class="box2 box"><input type="radio" id="limit" name="type" value="Limit"> Limit</div>
+      
+        <div class="name">Name:</div>
+        <div class="box3 box"><input type="text" id="name" name="name"></div>
+      
+      
+        <div class="color">Color:</div>
+        <div class="box4 box"></div>
+            
+        <div class="period">Period:</div>
+        <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day">
+          Every day</div>
+        <div class="box7 box"><input type="radio" id="eWeek" name="type" value="every week">
+          Every week</div>
+        <div class="box8 box"><input type="radio" id="eMonth" name="type" value="every month">
+          Every month</div>
+        <div class="box9 box"><input type="radio" id="eYear" name="type" value="every year">
+          Every year</div>
+     
+      
+        <div class="box10 box"><input type="radio" id="sWeekDays" name="type" value="select week days"> Select week days:</div>
+        <div class="box11 box">
+          <input type="checkbox" id="monday" name="type" value="monday">
+          <label for="monday"> Mon</label>
+          <input type="checkbox" id="tuesday" name="type" value="tuesday">
+          <label for="tuesday"> Tue</label>
+          <input type="checkbox" id="wednesday" name="type" value="wednesday">
+          <label for="thursday"> Wed</label>
+          <input type="checkbox" id="thursday" name="type" value="thursday">
+          <label for="thursday"> Th</label>
+          <input type="checkbox" id="friday" name="type" value="friday">
+          <label for="friday"> Fri</label>
+          <input type="checkbox" id="saturday" name="type" value="saturday">
+          <label for="saturday"> Sat</label>
+          <input type="checkbox" id="sunday" name="type" value="sunday">
+          <label for="sunday"> Sun</label>
+        </div>
+        <div class="btn"><input id="submitBtn" type="submit" value="Save" /></div>    
+      </form>
+  </section>
+  <section id="countForm">
+    <form>    
+        <div class="type">Type:</div>
+        <div class="box1 box">
+          <input type="radio" id="goal" name="type" value="Goal"> Goal
+        </div>
+        <div class="box2 box"><input type="radio" id="limit" name="type" value="Limit"> Limit</div>
+      
+        <div class="name">Name:</div>
+        <div class="box3 box"><input type="text" id="name" name="name"></div>
+      
+      
+        <div class="color">Color:</div>
+        <div class="box4 box"></div>
+      
+        <div class="lengthTime">Length of time:</div>
+        <div class="box51 box">0 hr</div>
+        <div class="box52 box">0 min</div>
+        <div class="box53 box">0 sec</div>
+      
+      
+        <div class="period">Period:</div>
+        <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day">
+          Every day</div>
+        <div class="box7 box"><input type="radio" id="eWeek" name="type" value="every week">
+          Every week</div>
+        <div class="box8 box"><input type="radio" id="eMonth" name="type" value="every month">
+          Every month</div>
+        <div class="box9 box"><input type="radio" id="eYear" name="type" value="every year">
+          Every year</div>
+     
+      
+        <div class="box10 box"><input type="radio" id="sWeekDays" name="type" value="select week days"> Select week days:</div>
+        <div class="box11 box">
+          <input type="checkbox" id="monday" name="type" value="monday">
+          <label for="monday"> Mon</label>
+          <input type="checkbox" id="tuesday" name="type" value="tuesday">
+          <label for="tuesday"> Tue</label>
+          <input type="checkbox" id="wednesday" name="type" value="wednesday">
+          <label for="thursday"> Wed</label>
+          <input type="checkbox" id="thursday" name="type" value="thursday">
+          <label for="thursday"> Th</label>
+          <input type="checkbox" id="friday" name="type" value="friday">
+          <label for="friday"> Fri</label>
+          <input type="checkbox" id="saturday" name="type" value="saturday">
+          <label for="saturday"> Sat</label>
+          <input type="checkbox" id="sunday" name="type" value="sunday">
+          <label for="sunday"> Sun</label>
+        </div>
+        <div class="btn"><input id="submitBtn" type="submit" value="Save" /></div>    
+      </form>
 
-  <!-- other 2 form boxes -->
-  <div class="checkOffForm"></div>
-  <div class="countForm"></div>
+  </section>
 
-  <!-- <script src="calander.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+  
+
   <script src="app.js" defer></script>
 </body>
 </html>

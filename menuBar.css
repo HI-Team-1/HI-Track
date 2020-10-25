@@ -8,9 +8,9 @@
 body{
   background-color: gray;
 }
-#timeForm{
+#timeForm, #checkOffForm, #countForm{
   width: 600px;
-  height: 550px;
+  height: 580px;
   background-color: white;
   margin: 60px auto;/*to allign in center of window with 60px up and down margin*/
 }
@@ -19,7 +19,6 @@ body{
 form{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
   grid-gap: 10px;
   justify-content: space-between;
   margin: 10px 10px 0 10px;
@@ -33,6 +32,9 @@ form{
   "box4 box4"
   "tpperiod tpperiod"
   "box5  ."
+  "lengthTime lengthTime"
+  "box51 box52"
+  "box53 ."
   "period period"
   "box6 box7"
   "box8 box9"
@@ -44,7 +46,7 @@ form{
 .box{
   background-color: lightgray;
   height: 30px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
   text-align: center;
 }
@@ -72,6 +74,20 @@ form{
 .tpperiod{
   grid-area: tpperiod;
 }
+.lengthTime{
+  grid-area: lengthTime;
+}
+.box51{
+  grid-area: box51;
+}
+.box52{
+  grid-area: box52;
+}
+.box53{
+  grid-area: box53;
+}
+
+
 .box5{
   grid-area: box5;
 }
@@ -98,51 +114,13 @@ form{
 }
 .btn{
   grid-area: btn;
+  /* width: 100px; not sure why it doesn't work*/
 }
-.btn{
-  width: 5rem;
-}
-
-/* form {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border: 2px black;
-  
-}
-section form {
-  width: 100%;
-  font-size: 1rem;
-  color: white
+#name{
+ width: 100%;
+ height: 100%;
+ border-radius: 5px;
+ background-color: lightgray;
+ border: none;
 }
 
-.type, .name, .color,  .tpperiod, .period{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.smallBox{
-  background-color: pink;
-  text-align: center;
-  width: 150px;
-  height: 30px;
-  margin: 7px;
-  padding: 5px;
-  border-radius: 10px;
-  border: grey solid 1px;
-}
-.largeBox {
-  background-color: magenta;
-  text-align: center;
-  width: 360px;
-  height: 30px;
-  margin: 7px;
-  padding: 5px;
-  border-radius: 10px;
-  border: grey solid 1px;
-  flex-grow: 1;
- } */
