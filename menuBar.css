@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  
+} 
+body{
+  background-color: gray;
+}
+#timeForm{
+  width: 600px;
+  height: 550px;
+  background-color: white;
+  margin: 60px auto;/*to allign in center of window with 60px up and down margin*/
+}
+
+
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-gap: 10px;
+  justify-content: space-between;
+  margin: 10px 10px 0 10px;
+  
+  grid-template-areas: 
+  "type type"
+  "box1 box2"
+  "name name"
+  "box3 box3"
+  "color color"
+  "box4 box4"
+  "tpperiod tpperiod"
+  "box5  ."
+  "period period"
+  "box6 box7"
+  "box8 box9"
+  "box10 box10"
+  "box11 box11"
+  "btn .";
+}
+
+.box{
+  background-color: lightgray;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.type{
+  grid-area: type;
+}
+.box1{
+  grid-area: box1;
+}
+.box2{
+  grid-area: box2;
+}
+.name{
+  grid-area: name;
+}
+.box3{
+  grid-area: box3;
+}
+.color{
+  grid-area: color;
+}
+.box4{
+  grid-area: box4;
+}
+.tpperiod{
+  grid-area: tpperiod;
+}
+.box5{
+  grid-area: box5;
+}
+.period{
+  grid-area: period;
+}
+.box6{
+  grid-area: box6;
+}
+.box7{
+  grid-area: box7;
+}
+.box8{
+  grid-area: box8;
+}
+.box9{
+  grid-area: box9;
+}
+.box10{
+  grid-area: box10;
+}
+.box11{
+  grid-area: box11;
+}
+.btn{
+  grid-area: btn;
+}
+.btn{
+  width: 5rem;
+}
+
+/* form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px black;
+  
+}
+section form {
+  width: 100%;
+  font-size: 1rem;
+  color: white
+}
+
+.type, .name, .color,  .tpperiod, .period{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.smallBox{
+  background-color: pink;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  margin: 7px;
+  padding: 5px;
+  border-radius: 10px;
+  border: grey solid 1px;
+}
+.largeBox {
+  background-color: magenta;
+  text-align: center;
+  width: 360px;
+  height: 30px;
+  margin: 7px;
+  padding: 5px;
+  border-radius: 10px;
+  border: grey solid 1px;
+  flex-grow: 1;
+ } */
