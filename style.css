@@ -39,8 +39,15 @@
   padding: 1rem;
   margin-top: 5rem;
 }
+
+.module {
+  height: 10em;
+  width: 10em;
+  border-radius: 10px;
+}
+
 /* right large activity box */
-.rightBox {
+.rightBox.card {
   height: auto;
   background-color: white;
   border-radius: 10px;
@@ -75,7 +82,7 @@
 }
 
 /* left large activity box */
-.leftBox {
+.leftBox.card {
   height: auto;
   background-color: white;
   border-radius: 10px;
@@ -134,14 +141,16 @@
   text-align: center;
 }
 
-
 /* Activity Button*/
-.leftBox .card-content{
+.leftBox .card-content {
+  height: 40rem;
+}
+
+.card-reveal {
   height: 30rem;
 }
 
-.card-title.activator > a{
+.card-title.activator > a {
   margin-top: 25rem;
   float: left;
-  
 }
