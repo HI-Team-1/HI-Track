@@ -12,24 +12,20 @@
   <!-- <div class="forms"></div> -->
   <section id="timeForm">
     <form>
-    <!-- <label for="type">Type:</label> -->
     
       <div class="type">Type:</div>
-      <div class="box1 box">
-        <input type="radio" id="goal" name="type" value="Goal"> Goal
+      <div class="box1 box"><input type="radio" id="goal" name="type" value="Goal"> Goal
       </div>
       <div class="box2 box"><input type="radio" id="limit" name="type" value="Limit"> Limit</div>
     
       <div class="name">Name:</div>
-      <div class="box3 box"><input type="text" id="name" name="name"></div>
-    
+      <div class="box3 box"><input type="text" id="name" placeholder="Task name here"  name="name"></div>
     
       <div class="color">Color:</div>
       <div class="box4 box"></div>
     
       <div class="tpperiod">Times per period:</div>
-      <div class="box5 box">0</div>
-    
+      <div class="box5 box"><input type="text" id="tpper" placeholder="0"  name="tpper"></div>
     
       <div class="period">Period:</div>
       <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day">
@@ -66,8 +62,7 @@
   <!-- the other 2 form templates -->
   <section id="checkOffForm">
     <form>
-      <!-- <label for="type">Type:</label> -->
-      
+
         <div class="type">Type:</div>
         <div class="box1 box">
           <input type="radio" id="goal" name="type" value="Goal"> Goal
@@ -75,23 +70,17 @@
         <div class="box2 box"><input type="radio" id="limit" name="type" value="Limit"> Limit</div>
       
         <div class="name">Name:</div>
-        <div class="box3 box"><input type="text" id="name" name="name"></div>
-      
+        <label class="box3 box"><input type="text" id="name" placeholder="Task name here" name="name"></label>    
       
         <div class="color">Color:</div>
         <div class="box4 box"></div>
             
         <div class="period">Period:</div>
-        <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day">
-          Every day</div>
-        <div class="box7 box"><input type="radio" id="eWeek" name="type" value="every week">
-          Every week</div>
-        <div class="box8 box"><input type="radio" id="eMonth" name="type" value="every month">
-          Every month</div>
-        <div class="box9 box"><input type="radio" id="eYear" name="type" value="every year">
-          Every year</div>
-     
-      
+        <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day"> Every day</div>
+        <div class="box7 box"><input type="radio" id="eWeek" name="type" value="every week"> Every week</div>
+        <div class="box8 box"><input type="radio" id="eMonth" name="type" value="every month"> Every month</div>
+        <div class="box9 box"><input type="radio" id="eYear" name="type" value="every year"> Every year</div>
+        
         <div class="box10 box"><input type="radio" id="sWeekDays" name="type" value="select week days"> Select week days:</div>
         <div class="box11 box">
           <input type="checkbox" id="monday" name="type" value="monday">
@@ -114,34 +103,29 @@
   </section>
   <section id="countForm">
     <form>    
-        <div class="type">Type:</div>
+        <label class="type">Type:</label>
         <div class="box1 box">
           <input type="radio" id="goal" name="type" value="Goal"> Goal
         </div>
         <div class="box2 box"><input type="radio" id="limit" name="type" value="Limit"> Limit</div>
       
-        <div class="name">Name:</div>
-        <div class="box3 box"><input type="text" id="name" name="name"></div>
+        <label class="name">Name:</label>
+        <div class="box3 box"><input type="text" id="name" placeholder="Task name here"  name="name"></div>  
       
-      
-        <div class="color">Color:</div>
+        <label class="color">Color:</label>
         <div class="box4 box"></div>
       
         <div class="lengthTime">Length of time:</div>
-        <div class="box51 box">0 hr</div>
-        <div class="box52 box">0 min</div>
-        <div class="box53 box">0 sec</div>
+        <div class="box51 box"><input type="text" id="nrHours" placeholder="0 hr"  name="nrHours"></div>
+        <div class="box52 box"><input type="text" id="nrMin" placeholder="0 min"  name="nrMin"></div>
+        <div class="box53 box"><input type="text" id="nrSec" placeholder="0 sec"  name="nrSec"></div>
       
       
-        <div class="period">Period:</div>
-        <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day">
-          Every day</div>
-        <div class="box7 box"><input type="radio" id="eWeek" name="type" value="every week">
-          Every week</div>
-        <div class="box8 box"><input type="radio" id="eMonth" name="type" value="every month">
-          Every month</div>
-        <div class="box9 box"><input type="radio" id="eYear" name="type" value="every year">
-          Every year</div>
+        <label class="period">Period:</label>
+        <div class="box6 box"><input type="radio" id="eDay" name="type" value="every day"> Every day</div>
+        <div class="box7 box"><input type="radio" id="eWeek" name="type" value="every week"> Every week</div>
+        <div class="box8 box"><input type="radio" id="eMonth" name="type" value="every month"> Every month</div>
+        <div class="box9 box"><input type="radio" id="eYear" name="type" value="every year"> Every year</div>
      
       
         <div class="box10 box"><input type="radio" id="sWeekDays" name="type" value="select week days"> Select week days:</div>
@@ -165,8 +149,7 @@
       </form>
 
   </section>
-
-  
+ 
 
   <script src="app.js" defer></script>
 </body>
