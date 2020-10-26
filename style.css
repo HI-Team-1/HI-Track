@@ -264,4 +264,17 @@ p {
 .card-title.activator > a {
   margin-top: 37rem;
   float: left;
+  position: fixed;
+}
+
+.moduleBox {
+  height: 10em;
+  width: 10em;
+  border-radius: 10px;
+}
+
+.moduleBox2 {
+  height: 5em;
+  width: 30em;
+  border-radius: 10px;
 }
