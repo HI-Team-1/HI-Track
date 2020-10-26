@@ -17,6 +17,10 @@
   align-items: center;
 }*/
 
+nav .brand-logo.center {
+  font-size: 3.5rem;
+}
+
 .weekHeader {
   /* border: 2px solid grey; */
   width: 100%;
@@ -31,7 +35,7 @@
 
 .mainBox {
   display: grid;
-  height: 45rem;
+  height: 50rem;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3rem;
   width: 100%;
@@ -43,12 +47,16 @@
   height: auto;
   background-color: white;
   border-radius: 10px;
+  width: 40rem;
+  height: 45rem;
 }
 
 .rightBox {
   height: auto;
   background-color: white;
   border-radius: 10px;
+  width: 40rem;
+  height: 45rem;
 }
 
 .leftBoxTabs {
