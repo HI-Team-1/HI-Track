@@ -1,3 +1,6 @@
+let list;
+let id;
+let data=localStorage.getItem("module");
 var leftBoxTabs = document.querySelectorAll(".leftBoxTabs button");
 var leftActivities = document.querySelectorAll(".leftActivities");
 var rightBoxTabs = document.querySelectorAll(".rightBoxTabs button");
@@ -6,12 +9,24 @@ var autogenButton=document.querySelector(".autoGenModule");
 autogenButton.addEventListener("click",autoGenModule);
 
 
+if(data){
+       list=JSON.stringify(data);
+       id=list.length;
+       loadList(list);
 
+}else{
+  list=[];
+  id=0;
+}
+function loadList(array){
+  console.log(array);
+  
+}
 
 function autoGenModule(){
   console.log("i am here");
   const module1=`
-  
+    
       <div class="container card">
         <div class="card-content align-wrapper">
           <span class="card-title activator">
@@ -36,11 +51,13 @@ function autoGenModule(){
           <p>Delete</p>
         </div>
       </div>
+     
     `;
 console.log(module1);
 const position="beforeend";
 
 leftActivities[0].insertAdjacentHTML(position,module1);
+localStorage.setItem("module",JSON.stringify(module1));
 
 
 
