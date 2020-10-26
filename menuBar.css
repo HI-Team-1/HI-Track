@@ -14,7 +14,18 @@ body{
   background-color: white;
   margin: 60px auto;/*to allign in center of window with 60px up and down margin*/
 }
-
+ #checkOffForm{
+  width: 600px;
+  height: 530px;
+  background-color: white;
+  margin: 60px auto;
+}
+#countForm{
+  width: 600px;
+  height: 610px;
+  background-color: white;
+  margin: 60px auto;
+}
 
 form{
   display: grid;
@@ -127,4 +138,17 @@ padding: 8px;
 font-size: 20px;
 text-align: center;
 }
+
+input[type=submit]{
+  padding: 5px 15px;
+  background-color: pink;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor:pointer;
+  border-radius: 5px;
+  margin: 10px;
+} /*use preventDefault when adding functionality to this btn so it doesn't try to submit to a php file*/
+
+
 
