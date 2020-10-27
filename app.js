@@ -27,7 +27,7 @@ function autoGenModule(){
   console.log("i am here");
   const module1=`
     
-      <div class="container card">
+      <li class=" container card">
         <div class="card-content align-wrapper">
           <span class="card-title activator">
             <span><i class="material-icons right">more_vert</i></span>
@@ -50,7 +50,7 @@ function autoGenModule(){
           <p>Edit</p>
           <p>Delete</p>
         </div>
-      </div>
+      </li>
      
     `;
 console.log(module1);
@@ -66,8 +66,15 @@ localStorage.setItem("module",JSON.stringify(module1));
 
 }
 function switchTabs(tab, tab_index, tab_wraps) {
+  
+
   tab_wraps.forEach(function (content, content_index) {
+    console.log("i am here switch");
+    console.log(tab_index);
+    console.log(content_index);
+    console.log(content);
     if (content_index == tab_index) {
+         console.log("hello");
       content.style.display = "block";
     } else {
       content.style.display = "none";
