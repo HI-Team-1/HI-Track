@@ -155,12 +155,12 @@ nav .brand-logo.center {
 /* styling for streak tab */
 .roundBoxes {
   display: grid;
-  grid-template-columns: repeat(2, 7rem); 
+  grid-template-columns: repeat(2, 7rem);
   grid-gap: 1rem;
   justify-content: center;
   align-items: center;
- }
- .roundBoxes .roundBox > div {
+}
+.roundBoxes .roundBox > div {
   grid-template-columns: repeat(2, 7rem);
   grid-gap: 1rem;
   justify-content: center;
@@ -182,7 +182,7 @@ nav .brand-logo.center {
 .roundBox > div h4 {
   place-self: center;
   text-align: center;
-  margin: 1.8rem auto; /*30px = 1.8rem - helps center the content inside*/
+  margin: 1.5rem; /*30px = 1.8rem - helps center the content inside*/
 }
 .roundBox > h3,
 p {
@@ -257,9 +257,7 @@ p {
 }
 
 .card-title.activator > a {
-  margin-top: 37rem;
-  float: left;
-  position: fixed;
+  margin-top: 36.8rem;
 }
 
 .moduleBox {
@@ -273,5 +271,3 @@ p {
   width: 30em;
   border-radius: 10px;
 }
-
-
