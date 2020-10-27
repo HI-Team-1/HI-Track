@@ -6,18 +6,6 @@
   line-height: 1.2;
 }
 
-/*.titleBar {
-  width: 100%;
-  height: 60px;
-  background-color: rgb(221, 107, 221, 0.6);
-  color: white;
-  font-weight: normal;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}*/
-
 nav .brand-logo.center {
   font-size: 3.5rem;
 }
@@ -167,6 +155,12 @@ nav .brand-logo.center {
 /* styling for streak tab */
 .roundBoxes {
   display: grid;
+  grid-template-columns: repeat(2, 7rem); 
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+ }
+ .roundBoxes .roundBox > div {
   grid-template-columns: repeat(2, 7rem);
   grid-gap: 1rem;
   justify-content: center;
@@ -279,3 +273,5 @@ p {
   width: 30em;
   border-radius: 10px;
 }
+
+
