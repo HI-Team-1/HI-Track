@@ -13,7 +13,6 @@ const months=["January","February","March","April","May","June","July","August",
 const lastDay=new Date(date.getFullYear(),date.getMonth()+1,0).getDate();// this gives you the last day of the current month
 const prevLastDay=new Date(date.getFullYear(),date.getMonth(),0).getDate();// this will give you the last day of the previous month
 const cMonth=document.querySelector(".c-month");
-console.log(cMonth);
 cMonth.innerHTML=months[month];
 const cDate=document.querySelector(".cDate");
 cDate.innerHTML=date.toDateString();
