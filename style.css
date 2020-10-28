@@ -97,31 +97,15 @@ nav .brand-logo.center {
   text-align: center;
   outline: none;
 }
-.text > i {
-  margin-left: 1em;
-  width: 2em;
-  height: 2em;
-  margin-top: 1rem;
-  font-size: 2rem;
-}
 
-.leftBoxList ul  {
+.leftBoxList ul li {
   display: none; /*get back to this later, put initial box*/
 }
-.leftBoxList li  {
-  
+.leftBoxList li div {
+  list-style: none;
   height: 10em;
   width: 10em;
   border-radius: 10px;
-  
-  
-}
-
-.leftBoxList>ul>.today{
-  float: left;
-   width: auto;
-   list-style: outside none none;
-   margin-left:1rem;
 }
 
 .leftBoxList .card-panel {
@@ -133,13 +117,7 @@ nav .brand-logo.center {
 .leftActivities {
   padding-top: 1em;
   padding-left: 1em;
-  overflow: hidden;
-  margin-left:2rem;
-  
-  
 }
-
-
 
 /*Box Button Hover Effects*/
 .leftBoxTabs > button:hover {
@@ -167,7 +145,6 @@ nav .brand-logo.center {
   margin-bottom: 5px;
   text-align: center;
 }
-
 /*when screen width is smaller left box jumps on top of right box*/
 @media (max-width: 768px) {
   .mainBox {
@@ -361,4 +338,3 @@ p {
 /* .form{
    display: none;
 } */
-
