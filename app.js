@@ -6,6 +6,13 @@ var leftActivities = document.querySelectorAll(".leftActivities");
 var rightBoxTabs = document.querySelectorAll(".rightBoxTabs button");
 var tabPanel = document.querySelectorAll(".tabPanel");
 var autogenButton=document.querySelector(".autoGenModule");
+var activityTitle=document.querySelector("#name");
+var colorActivity=document.querySelector(".colorSelected");
+var formSubmit=document.querySelector(".submitButton");
+var form=document.querySelector(".check");
+formSubmit.addEventListener("click",dataCollected);
+
+
 autogenButton.addEventListener("click",autoGenModule);
 
 
@@ -21,6 +28,15 @@ if(data){
 function loadList(array){
   console.log(array);
   
+}
+function dataCollected(){
+  console.log("formButton");
+  var title=activityTitle.value;
+  var color=colorActivity.value;
+  form.style.display="none";
+  console.log(title);
+  console.log(color);
+
 }
 
 function autoGenModule(){
