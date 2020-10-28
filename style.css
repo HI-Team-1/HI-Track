@@ -160,6 +160,12 @@ nav .brand-logo.center {
   justify-content: center;
   align-items: center;
 }
+
+.tabPanel > h1 {
+  margin-top: 1rem;
+  font-size: 2.5em;
+}
+
 .roundBoxes .roundBox > div {
   grid-template-columns: repeat(2, 7rem);
   grid-gap: 1rem;
@@ -200,21 +206,23 @@ p {
 }
 .squareBoxes {
   width: 25em;
-  height: 22em;
+  height: 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  margin: 0 auto;
   color: white;
+  padding-top: 10em;
+  padding-left: 2em;
+  margin-left: 7em;
 }
 .squareBoxes .b1 {
   background-color: rgb(182, 176, 176);
   text-align: center;
-  width: 6.2rem; /*100px;*/
-  height: 5rem; /*80px;*/
-  margin: 0.4rem; /*7px;*/
-  padding: 0.3rem; /*5px;*/
+  width: 10em; /*100px;*/
+  height: 5em; /*80px;*/
+  margin: 0.2em; /*7px;*/
+  padding: 0rem; /*5px;*/
   border-radius: 0.6rem; /*10px;*/
 }
 .squareBoxes .b1 h6 {
@@ -230,8 +238,8 @@ p {
 .squareBoxes .b2 {
   background-color: rgb(182, 176, 176);
   text-align: center;
-  width: 6.8rem; /*110px; */
-  height: 5rem; /*80px;*/
+  width: 10em; /*110px; */
+  height: 5em; /*80px;*/
   margin: 0.4rem; /*7px;*/
   padding: 0.3rem; /*5px;*/
   border-radius: 0.6rem; /*10px;*/
@@ -257,7 +265,7 @@ p {
 }
 
 .card-title.activator > a {
-  margin-top: 36.8rem;
+  margin-top: -6rem;
 }
 
 .moduleBox {
@@ -270,4 +278,24 @@ p {
   height: 5em;
   width: 30em;
   border-radius: 10px;
+}
+
+.card > ul {
+}
+
+.text > i {
+  margin-left: 1em;
+  width: 2em;
+  height: 2em;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.cardsColBox {
+  width: 24em;
+  height: 25em;
+  line-height: 3em;
+  overflow: scroll;
+  padding: 5px;
+  background: transparent;
 }
