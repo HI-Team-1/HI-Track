@@ -5,9 +5,9 @@
   font-family: "Roboto", sans-serif;
   
 } 
-body{
+/* body{
   background-color: gray;
-}
+} */
 #timeForm, #checkOffForm, #countForm{
   width: 600px;
   height: 580px;
