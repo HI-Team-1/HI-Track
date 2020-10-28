@@ -323,7 +323,7 @@ p {
   background-color: #9575cd;
 }
 .btnSlideMenu li:hover {
-  background-color: rgb(165, 156, 156); /*darker shade of the background color*/
+  background-color: #5e35b1; /*darker shade of the background color*/
 }
 .btnSlideMenu li h6 {
   font-size: 1.5rem;
