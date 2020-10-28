@@ -98,10 +98,14 @@ nav .brand-logo.center {
   outline: none;
 }
 
-.leftBoxList ul li {
+#leftBoxList ul {
   display: none; /*get back to this later, put initial box*/
 }
-.leftBoxList li div {
+
+.card-content {
+}
+
+.leftBoxList li {
   list-style: none;
   height: 10em;
   width: 10em;
@@ -115,8 +119,6 @@ nav .brand-logo.center {
 }
 
 .leftActivities {
-  padding-top: 1em;
-  padding-left: 1em;
 }
 
 /*Box Button Hover Effects*/
@@ -197,12 +199,12 @@ p {
 
 .roundBox h3 {
   font-size: 1.2rem;
-  margin: 0.3 rem; /*5px;*/
+  margin: 0.3rem; /*5px;*/
   padding-left: 1px;
 }
 .roundBox p {
   font-size: 1rem;
-  margin: 0.3 rem; /*5px;*/
+  margin: 0.3rem; /*5px;*/
 }
 .squareBoxes {
   width: 25em;
@@ -257,7 +259,7 @@ p {
 
 /* Activity Button*/
 .leftBox .card-content {
-  height: 40rem;
+  height: 10rem;
 }
 
 .card-reveal {
@@ -282,6 +284,7 @@ p {
 }
 
 .collection {
+  height: 36em;
 }
 
 .text > i {
@@ -338,3 +341,12 @@ p {
 /* .form{
    display: none;
 } */
+.checkOffForm {
+  display: none;
+}
+#leftBoxList .today {
+  float: left;
+  width: 10em;
+  list-style: outside none none;
+  margin-left: 1rem;
+}

@@ -3,150 +3,151 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  
-} 
-body{
+}
+body {
   background-color: gray;
 }
-#timeForm, #checkOffForm, #countForm{
+#timeForm,
+#checkOffForm,
+#countForm {
   width: 600px;
   height: 580px;
   background-color: white;
-  margin: 60px auto;/*to allign in center of window with 60px up and down margin*/
+  margin: 60px auto; /*to allign in center of window with 60px up and down margin*/
 }
- #checkOffForm{
+#checkOffForm {
+  display: none;
   width: 600px;
   height: 530px;
   background-color: white;
   margin: 60px auto;
 }
-#countForm{
+#countForm {
   width: 600px;
   height: 610px;
   background-color: white;
   margin: 60px auto;
 }
 
-form{
+form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   justify-content: space-between;
   margin: 10px 10px 0 10px;
-  
-  grid-template-areas: 
-  "type type"
-  "box1 box2"
-  "name name"
-  "box3 box3"
-  "color color"
-  "box4 box4"
-  "tpperiod tpperiod"
-  "box5  ."
-  "lengthTime lengthTime"
-  "box51 box52"
-  "box53 ."
-  "period period"
-  "box6 box7"
-  "box8 box9"
-  "box10 box10"
-  "box11 box11"
-  "btn .";
+
+  grid-template-areas:
+    "type type"
+    "box1 box2"
+    "name name"
+    "box3 box3"
+    "color color"
+    "box4 box4"
+    "tpperiod tpperiod"
+    "box5  ."
+    "lengthTime lengthTime"
+    "box51 box52"
+    "box53 ."
+    "period period"
+    "box6 box7"
+    "box8 box9"
+    "box10 box10"
+    "box11 box11"
+    "btn .";
 }
 
-.box{
+.box {
   background-color: lightgray;
   height: 30px;
   /* border: 1px solid black; */
   border-radius: 5px;
   text-align: center;
 }
-.type{
+.type {
   margin-top: 7px;
   grid-area: type;
 }
-.box1{
+.box1 {
   grid-area: box1;
 }
-.box2{
+.box2 {
   grid-area: box2;
 }
-.name{
+.name {
   grid-area: name;
 }
-.box3{
+.box3 {
   grid-area: box3;
 }
-.color{
+.color {
   grid-area: color;
 }
-.box4{
+.box4 {
   grid-area: box4;
 }
-.tpperiod{
+.tpperiod {
   grid-area: tpperiod;
 }
-.lengthTime{
+.lengthTime {
   grid-area: lengthTime;
 }
-.box51{
+.box51 {
   grid-area: box51;
 }
-.box52{
+.box52 {
   grid-area: box52;
 }
-.box53{
+.box53 {
   grid-area: box53;
 }
 
-
-.box5{
+.box5 {
   grid-area: box5;
 }
-.period{
+.period {
   grid-area: period;
 }
-.box6{
+.box6 {
   grid-area: box6;
 }
-.box7{
+.box7 {
   grid-area: box7;
 }
-.box8{
+.box8 {
   grid-area: box8;
 }
-.box9{
+.box9 {
   grid-area: box9;
 }
-.box10{
+.box10 {
   grid-area: box10;
 }
-.box11{
+.box11 {
   grid-area: box11;
 }
- .btn{
+.btn {
   grid-area: btn;
   /* width: 100px; not sure why it doesn't work*/
-}  
-
-input[type=text]{
- width: 100%;
- height: 100%;
- border-radius: 5px;
- background-color: lightgray;
- border: none;
-padding: 8px;
-font-size: 20px;
-text-align: center;
 }
 
-input[type=submit]{
+input[type="text"] {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: lightgray;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+input[type="submit"] {
   padding: 3px 20px;
   background-color: pink;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
 } /*use preventDefault when adding functionality to this btn so it doesn't try to submit to a php file*/

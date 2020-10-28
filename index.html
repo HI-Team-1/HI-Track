@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="materialize.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -39,41 +40,42 @@
             <button class="todayButton">Today</button>
             <button>All activities</button>
           </div>
+
           <!--end-->
           <div class="card-content">
-            <!--<div class="module z-depth-1"></div>-->
             <div class="activator">
               <div class="cardsColBox">
+                <!--<ul class="leftBoxList">
+                  
+                </ul>-->
                 <!--card collection-->
-                <ul class="collection">
-                  <li class="text collection-item">
+                <ul id="leftBoxList" class="collection">
+                  <!--Today Cards-->
+                  <li class="leftActivities"></li>
+                  <!--All Activies Tab Cards-->
+                  <li class="leftActivities collection-item"></li>
+                  <section>
+                    <div class="checkOffForm">
+                      <form class="check">
+                        <div class="name">Name:</div>
+                        <label class="box3"
+                          ><input
+                            type="text"
+                            id="name"
+                            placeholder="Task name here"
+                            name="name"
+                        /></label>
+                        <div class="color">Color:</div>
+                        <input type="color" class="colorSelected" />
+                      </form>
+                      <button class="saveButton">Save</button>
+                    </div>
+                  </section>
+
+                  <!--<li class="text collection-item">
                     <i class="material-icons text">sort</i>All Activity card
                     goes here
-                  </li>
-                  <li class="text collection-item">
-                    <i class="material-icons text">sort</i>All Activity card
-                    goes here
-                  </li>
-                  <li class="text collection-item">
-                    <i class="material-icons text">sort</i>All Activity card
-                    goes here
-                  </li>
-                  <li class="text collection-item">
-                    <i class="material-icons text">sort</i>All Activity card
-                    goes here
-                  </li>
-                  <li class="text collection-item">
-                    <i class="material-icons text">sort</i>All Activity card
-                    goes here
-                  </li>
-                  <li class="text collection-item">
-                    <i class="material-icons text">sort</i>All Activity card
-                    goes here
-                  </li>
-                  <li class="text collection-item">
-                    <i class="material-icons text">sort</i>All Activity card
-                    goes here
-                  </li>
+                  </li>-->
                 </ul>
                 <!--end-->
               </div>
@@ -96,7 +98,7 @@
                   <h6>Time tracking activity</h6>
                   <p>For activities you do multiple times every period</p>
                 </li>
-                <li>
+                <li class="checkOffAct">
                   <h6>Check-off activity</h6>
                   <p>For activities you do once every period</p>
                 </li>
