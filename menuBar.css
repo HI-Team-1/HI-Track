@@ -5,9 +5,11 @@
   font-family: "Roboto", sans-serif;
   
 } 
+
 body{
   background-color: gray;
 }
+
 #timeForm, #checkOffForm, #countForm{
   width: 600px;
   height: 580px;
@@ -15,6 +17,9 @@ body{
   margin: 60px auto;/*to allign in center of window with 60px up and down margin*/
 }
  #checkOffForm{
+
+   /*display:none;*/
+
   width: 600px;
   height: 530px;
   background-color: white;
@@ -28,6 +33,7 @@ body{
 }
 
 form{
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
@@ -126,6 +132,10 @@ form{
 }
  .btn{
   grid-area: btn;
+
+  display:hidden;
+ /* background-color: white;*/
+
   /* width: 100px; not sure why it doesn't work*/
 }  
 
