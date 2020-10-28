@@ -265,7 +265,7 @@ p {
 }
 
 .card-title.activator > a {
-  margin-top: -6rem;
+  margin-top: 0rem;
 }
 
 .moduleBox {
@@ -284,7 +284,7 @@ p {
 }
 
 .text > i {
-  margin-left: 1em;
+  margin-left: 0.5em;
   width: 2em;
   height: 2em;
   margin-top: 1rem;
@@ -292,10 +292,8 @@ p {
 }
 
 .cardsColBox {
-  width: 24em;
-  height: 25em;
-  line-height: 3em;
-  overflow: scroll;
-  padding: 5px;
-  background: transparent;
+  width: inherit;
+  height: 23em;
+  overflow: auto;
+  border-radius: 10px;
 }
