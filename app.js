@@ -9,14 +9,14 @@ var autogenButton=document.querySelector(".autoGenModule");
 var activityTitle=document.querySelector("#name");
 var colorActivity=document.querySelector(".colorSelected");
 var formSubmit=document.querySelector(".submitButton");
-var form=document.querySelector(".check");
+var form=document.querySelector(".checkOffForm");
 formSubmit.addEventListener("click",dataCollected);
 
 
 autogenButton.addEventListener("click",autoGenModule);
 
 
-if(data){
+/*if(data){
        list=JSON.stringify(data);
        id=list.length;
        loadList(list);
@@ -28,26 +28,33 @@ if(data){
 function loadList(array){
   console.log(array);
   
-}
+}*/
 function dataCollected(){
   console.log("formButton");
   var title=activityTitle.value;
   var color=colorActivity.value;
   form.style.display="none";
+
   console.log(title);
   console.log(color);
+  autoGenModule(title,color);
 
 }
 
-function autoGenModule(){
-  console.log("i am here");
+function autoGenModule(title,color){
+  const allA =`<li class="card">
+  <div class="text">
+    <i class="material-icons text">sort</i>${title}
+  </div>
+</li>`; 
+
   const module1=`
     
-      <li class=" container card">
+      <li class=" container card today">
         <div class="card-content align-wrapper">
           <span class="card-title activator">
             <span><i class="material-icons right">more_vert</i></span>
-            <p class="">Goal</p>
+            <p class="">${title}</p>
           </span>
           <p>Event Frequency</p>
           <form action="#">
@@ -73,7 +80,8 @@ console.log(module1);
 const position="beforeend";
 
 leftActivities[0].insertAdjacentHTML(position,module1);
-localStorage.setItem("module",JSON.stringify(module1));
+leftActivities[1].insertAdjacentHTML(position,allA);
+
 
 
 

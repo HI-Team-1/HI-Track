@@ -106,6 +106,13 @@ nav .brand-logo.center {
   text-align: center;
   outline: none;
 }
+.text > i {
+  margin-left: 1em;
+  width: 2em;
+  height: 2em;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
 
 .leftBoxList ul  {
   display: none; /*get back to this later, put initial box*/
@@ -119,7 +126,7 @@ nav .brand-logo.center {
   
 }
 
-.leftBoxList>ul>li{
+.leftBoxList>ul>.today{
   float: left;
    width: auto;
    list-style: outside none none;
