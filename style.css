@@ -280,7 +280,7 @@ p {
   border-radius: 10px;
 }
 
-.card > ul {
+.collection {
 }
 
 .text > i {
@@ -295,5 +295,5 @@ p {
   width: inherit;
   height: 23em;
   overflow: auto;
-  border-radius: 10px;
+  border: transparent;
 }
