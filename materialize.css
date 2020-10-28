@@ -4835,8 +4835,8 @@ small {
 }
 
 .card .card-title {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 3em;
+  font-weight: 400;
 }
 
 .card .card-title.activator {
@@ -5027,12 +5027,12 @@ small {
 .card .card-reveal {
   padding: 24px;
   position: absolute;
-  background-color: #fff;
+  /*background-color: #fff;*/
   width: 100%;
   overflow-y: auto;
   left: 0;
   top: 100%;
-  height: 90%;
+  height: 91.6%;
   z-index: 3;
   display: none;
 }
@@ -5040,6 +5040,7 @@ small {
 .card .card-reveal .card-title {
   cursor: pointer;
   display: block;
+  color: white;
 }
 
 #toast-container {
