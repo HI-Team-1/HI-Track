@@ -29,63 +29,84 @@
     <nav>
       <div class="nav-wrapper deep-purple darken-1">
         <a href="#" class="brand-logo center">HIT</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
       </div>
     </nav>
     <!--Main Box Container-->
     <div class="container">
       <div class="mainBox">
-        <div class="leftBox z-depth-2">
+        <div class="leftBox card z-depth-2">
           <!-- Tab buttons -->
           <div class="leftBoxTabs">
             <button class="todayButton">Today</button>
             <button>All activities</button>
           </div>
-
-          <!-- Tab content -->
-          <div class="leftBoxList">
+          <!--end-->
+          <div class="card-content">
+            <!--<div class="module z-depth-1"></div>-->
+            <div class="activator">
+              <div class="cardsColBox">
+                <!--card collection-->
+                <ul class="collection">
+            <!-- Tab content -->
+                  <div class="leftBoxList">
             <!--Today Cards-->
-            
               <ul class="leftActivities">
-               
-                  
               </ul>
-            
-            
             <!--All Activies Tab Cards-->
-          
-              
                 <ul class="leftActivities">
-                 
                 </ul>
-              
-            
             <button class="autoGenModule">Click me</button>
             <section>
               <div class=checkOffForm>
               <form class="check">
-          
-                
-                
                   <div class="name">Name:</div>
-                  <label class="box3"><input type="text" id="name" placeholder="Task name here" name="name"></label>    
-                
+                  <label class="box3"><input type="text" id="name" placeholder="Task name here" name="name"></label> 
                   <div class="color">Color:</div>
                   <input type=color class="colorSelected">
-                      
-   
-                  
-                  
                 </form>
                 <button class="submitButton">Save</button> 
               </div>
             </section>
             <!--All Activies Tab Cards End-->
+=======
+              <a class="btn-floating pulse btn-small waves-effect waves-light"
+                ><i class="material-icons right">add</i></a
+              >
+            </div>
+          </div>
+                  
+                </ul>
+                <!--end-->
+              </div>
+            
+          <!--Cad Reveal-->
+          <div class="card-reveal">
+            <span class="card-title">
+              Create
+              <i class="material-icons right">close</i></span
+            >
+            <div class="card-action">
+              <ul class="btnSlideMenu">
+                <li>
+                  <h6>Time tracking activity</h6>
+                  <p>For activities you do multiple times every period</p>
+                </li>
+                <li>
+                  <h6>Check-off activity</h6>
+                  <p>For activities you do once every period</p>
+                </li>
+                <li>
+                  <h6>Count activity</h6>
+                  <p>For activities you do multiple times every period</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <!--end-->
 
-        <!-- </div> -->
-        <div class="rightBox z-depth-2">
+        <!-- right box -->
+        <div class="rightBox card z-depth-2">
           <!-- Tab buttons -->
           <div class="rightBoxTabs">
             <button>Streaks</button>
@@ -94,6 +115,52 @@
           <!-- Tab content -->
           <div id="streaks" class="tabPanel">
             <h1>Streaks</h1>
+            <div class="roundBoxes">
+              <div class="roundBox">
+                <div><h4>0</h4></div>
+                <h3>Current Streak</h3>
+                <p>Goal Name</p>
+              </div>
+              <div class="roundBox">
+                <div><h4>0</h4></div>
+                <h3>Highest Streak</h3>
+                <p>Goal Name</p>
+              </div>
+            </div>
+            <div class="squareBoxes">
+              <div class="b1">
+                <h6>Total time spent:</h6>
+                <p>0s</p>
+              </div>
+              <div class="b1">
+                <h6>Most popular activity:</h6>
+                <p>None</p>
+              </div>
+              <div class="b1">
+                <h6>Goal periods reached:</h6>
+                <p>0</p>
+              </div>
+              <div class="b1">
+                <h6>Goal periods failed:</h6>
+                <p>0</p>
+              </div>
+              <div class="b1">
+                <h6>Limit periods successful:</h6>
+                <p>0</p>
+              </div>
+              <div class="b1">
+                <h6>Limit periods failed:</h6>
+                <p>0</p>
+              </div>
+              <div class="b2">
+                <h6>0%</h6>
+                <p>Average goal completion</p>
+              </div>
+              <div class="b2">
+                <h6>0%</h6>
+                <p>Average limit completion rate</p>
+              </div>
+            </div>
           </div>
           <!--Calendar-->
           <div id="calendar" class="tabPanel">
@@ -124,7 +191,7 @@
       </div>
     </div>
     <script src="calander.js"></script>
-    <script src="materialize.min.js"></script>
+    <script src="materialize.js"></script>
     <script src="app.js" defer></script>
   </body>
 </html>
