@@ -221,10 +221,10 @@ p {
 .squareBoxes .b1 {
   background-color: rgb(182, 176, 176);
   text-align: center;
-  width: 10em; /*100px;*/
-  height: 5em; /*80px;*/
-  margin: 0.2em; /*7px;*/
-  padding: 0rem; /*5px;*/
+  width: 6em; /*100px;*/
+  height: 4em; /*80px;*/
+  margin: 0.5em; /*7px;*/
+  padding: 0em; /*5px;*/
   border-radius: 0.6rem; /*10px;*/
 }
 .squareBoxes .b1 h6 {
