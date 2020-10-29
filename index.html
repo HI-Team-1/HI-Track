@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="materialize.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -32,36 +33,84 @@
     </nav>
     <!--Main Box Container-->
     <div class="container">
-          <div class="mainBox">
-            <div class="leftBox card z-depth-2">
-              <!-- Tab buttons -->
-              <div class="leftBoxTabs">
-                <button class="todayButton">Today</button>
-                <button>All activities</button>
+      <div class="mainBox">
+        <div class="leftBox card z-depth-2">
+          <!-- Tab buttons -->
+          <div class="leftBoxTabs">
+            <button class="todayButton">Today</button>
+            <button>All activities</button>
+          </div>
+
+          <!--end-->
+          <div class="card-content">
+            <div class="activator">
+              <div class="cardsColBox">
+                <!--<ul class="leftBoxList">
+                  
+                </ul>-->
+                <!--card collection-->
+                <ul id="leftBoxList" class="collection">
+                  <!--Today Cards-->
+                  <li class="leftActivities"></li>
+                  <!--All Activies Tab Cards-->
+                  <li class="leftActivities collection-item"></li>
+                  <section>
+                    <div class="checkOffForm">
+                      <form class="check">
+                        <div class="name">Name:</div>
+                        <label class="box3"
+                          ><input
+                            type="text"
+                            id="name"
+                            placeholder="Task name here"
+                            name="name"
+                        /></label>
+                        <div class="color">Color:</div>
+                        <input type="color" class="colorSelected" />
+                      </form>
+                      <button class="saveButton">Save</button>
+                    </div>
+                  </section>
+
+                  <!--<li class="text collection-item">
+                    <i class="material-icons text">sort</i>All Activity card
+                    goes here
+                  </li>-->
+                </ul>
+                <!--end-->
               </div>
-              <!--end-->
-              <div class="card-content">
-                <div class="module z-depth-1"></div>
-                <div class="card-title activator">
-                  <a class="btn-floating btn-small waves-effect waves-light"><i class="material-icons">add</i></a>
-                </div>
-              </div>
-    
-<!--Cad Reveal-->
-              <div class="card-reveal">
-                <span class="card-title"
-                  >Card Title 2<i class="material-icons right">close</i></span
-                >
-                <div>
-                  <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                  </ul>
-                </div>
-              </div>
+
+              <a class="btn-floating pulse btn-small waves-effect waves-light"
+                ><i class="material-icons right">add</i></a
+              >
             </div>
-            <!--end-->
+          </div>
+
+          <!--Cad Reveal-->
+          <div class="card-reveal">
+            <span class="card-title">
+              Create
+              <i class="material-icons right">close</i></span
+            >
+            <div class="card-action">
+              <ul class="btnSlideMenu">
+                <li>
+                  <h6>Time tracking activity</h6>
+                  <p>For activities you do multiple times every period</p>
+                </li>
+                <li class="checkOffAct">
+                  <h6>Check-off activity</h6>
+                  <p>For activities you do once every period</p>
+                </li>
+                <li>
+                  <h6>Count activity</h6>
+                  <p>For activities you do multiple times every period</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end-->
 
         <!-- right box -->
         <div class="rightBox card z-depth-2">
@@ -87,16 +136,16 @@
             </div>
             <div class="squareBoxes">
               <div class="b1">
-                <h6>Total time spent: </h6>
+                <h6>Total time spent:</h6>
                 <p>0s</p>
               </div>
               <div class="b1">
-                <h6>Most popular activity: </h6>
+                <h6>Most popular activity:</h6>
                 <p>None</p>
               </div>
               <div class="b1">
-               <h6>Goal periods reached:</h6>
-               <p>0</p>
+                <h6>Goal periods reached:</h6>
+                <p>0</p>
               </div>
               <div class="b1">
                 <h6>Goal periods failed:</h6>
@@ -119,7 +168,7 @@
                 <p>Average limit completion rate</p>
               </div>
             </div>
-          </div>  
+          </div>
           <!--Calendar-->
           <div id="calendar" class="tabPanel">
             <div class="container2">
